@@ -29,8 +29,7 @@ Plugin 'jnurmine/Zenburn'                " Color schemes
 Plugin 'kien/ctrlp.vim'                  " Super search
 Plugin 'nelstrom/vim-visual-star-search' " Search in visual mode
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'} " nice Toolbar
-
-
+Plugin 'airblade/vim-gitgutter'          " Git Gutter, git left indicatos to notify wich lines were modifcated
 
 
 " All of your Plugins must be added before the following line
@@ -70,9 +69,9 @@ let mapleader = ","               " Rebind <Leader>
 "           alias vim="stty stop '' -ixoff ; vim"
 "           # `Frozing' tty, so after any command terminal settings will be restored
 "           ttyctl -f"
-noremap <C-S> :update<CR>         " Quicksave command typical Cntrl + S of the all life
-vnoremap <C-S> <C-C>:update<CR>   " Quicksave command typical Cntrl + S of the all life
-inoremap <C-S> <C-O>:update<CR>   " Quicksave command typical Cntrl + S of the all life
+noremap <C-S> :update<CR>   
+vnoremap <C-S> <C-C>:update<CR>  
+inoremap <C-S> <C-O>:update<CR>
 
 " Quick quit command
 noremap <Leader>q :quit<CR>  " Quit current window :q
