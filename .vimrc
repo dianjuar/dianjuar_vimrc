@@ -13,8 +13,8 @@ Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
-Plugin 'scrooloose/nerdtree'             " Nice "project" tree
-Plugin 'klen/python-mode'                " Python super plugin
+Plugin 'scrooloose/nerdtree'             " Nice 'project' tree
+Plugin 'jistr/vim-nerdtree-tabs'         " Plugin of plugin, complement of NERDTree to have a nice tabs behavior
 Plugin 'w0rp/ale'                        " Asynchronous linter
 Plugin 'Chiel92/vim-autoformat'          " Auto format
 Plugin 'fisadev/vim-isort'               " Vim plugin to sort python imports using isort
@@ -37,7 +37,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " ----------------------------------- stuff
-map <F2> :NERDTreeToggle<CR>      " Toggle project bar
+map <F2> <plug>NERDTreeTabsToggle<CR>  " Toggle project bar
 nnoremap <space> za               " Enable folding with the spacebar
 set encoding=utf-8                " For the most part, you should be using UTF8 when working with Python
                                   " White spaces
