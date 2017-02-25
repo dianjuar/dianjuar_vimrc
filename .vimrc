@@ -54,6 +54,7 @@ set clipboard=unnamed             " System clipboard
                                   " Mouse and backspace
 set mouse=a                       " on OSX press ALT and click
 set bs=2                          " make backspace behave like normal again
+set number			  " Show the number lines
 
 " Rebind <Leader> key
 " I like to have it here becuase it is easier to reach than the default and
