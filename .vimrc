@@ -134,10 +134,11 @@ autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave  * if pumvisible() == 0|pclose|endif
 
 " Identation standar
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.js,*.html,*.css,*.ts
     \ set tabstop=2     |
-    \ set softtabstop=2 |    
-    \ set shiftwidth=2
+    \ set softtabstop=2 |
+    \ set shiftwidth=2  |
+    \ set expandtab     |
 
 " Add a bit of logic to define which scheme to use based upon the VIM mode
 if has('gui_running')
