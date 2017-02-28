@@ -15,6 +15,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'             " Nice 'project' tree
 Plugin 'jistr/vim-nerdtree-tabs'         " Plugin of plugin, complement of NERDTree to have a nice tabs behavior
+Plugin 'python-mode/python-mode'         " Python IDE
 Plugin 'w0rp/ale'                        " Asynchronous linter
 Plugin 'Chiel92/vim-autoformat'          " Auto format
 Plugin 'fisadev/vim-isort'               " Vim plugin to sort python imports using isort
@@ -47,7 +48,7 @@ let g:pymode_trim_whitespaces = 1 " Trim unused white spaces on save
 let g:pymode_options = 1          " Setup default python options https://github.com/python-mode/python-mode/blob/develop/doc/pymode.txt
 let g:pymode_indent = 1           " Enable pymode indentation 
 let g:pymode_folding = 1          " Fast and usual python folding in Vim.
-set foldlevel=99                  " Quit folding by default... So anoying
+"set foldlevel=99                  " Quit folding by default... So anoying
 let g:pymode_doc = 1              " Turns on the documentation script 
 let g:pymode_doc_bind = 'K'       " Bind keys to show documentation for current word (selection)
 set clipboard=unnamed             " System clipboard
