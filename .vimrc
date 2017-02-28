@@ -31,7 +31,10 @@ Plugin 'kien/ctrlp.vim'                  " Super search
 Plugin 'nelstrom/vim-visual-star-search' " Search in visual mode
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'} " nice Toolbar
 Plugin 'airblade/vim-gitgutter'          " Git Gutter, git left indicatos to notify wich lines were modifcated
-
+Plugin 'jelera/vim-javascript-syntax'	 " JavaScript should look a lot nicer
+Plugin 'Raimondi/delimitMate'	 	 " Provides insert mode auto-completion for quotes, parens, brackets, etc
+Plugin 'leafgarland/typescript-vim'	 " typescript highliter
+Plugin 'marijnh/tern_for_vim'		 " A tool that parses your JavaScript properly
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,6 +59,8 @@ set clipboard=unnamed             " System clipboard
 set mouse=a                       " on OSX press ALT and click
 set bs=2                          " make backspace behave like normal again
 set number			  " Show the number lines
+autocmd QuickFixCmdPost [^l]* nested cwindow " Typescript erros
+autocmd QuickFixCmdPost    l* nested lwindow " Typescript erros 
 
 " Rebind <Leader> key
 " I like to have it here becuase it is easier to reach than the default and
@@ -150,3 +155,4 @@ endif
 
 let python_highlight_all=1
 syntax on
+set t_Co=256 "Enable the 256 colour pallet
